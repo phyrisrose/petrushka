@@ -1,7 +1,18 @@
 module.exports = {
   siteMetadata: {
-      title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+    title: ``,
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-styled-components"]
+  plugins: [
+    {
+      resolve: "gatsby-plugin-material-ui",
+      // If you want to use styled components you should change the injection order.
+      options: {
+        StylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    "gatsby-plugin-styled-components",
+  ],
 };
