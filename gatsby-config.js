@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    "gatsby-plugin-layout",
     "gatsby-plugin-material-ui",
   ] /** @todo not sure we actually need this */,
 };
