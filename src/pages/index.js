@@ -1,6 +1,7 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 import { Layout } from "../components";
 
@@ -129,12 +130,16 @@ const links = [
   },
 ];
 
-// markup
+/**
+ *
+ * @todo remove button after you are done testing theme.
+ */
 const IndexPage = () => {
   return (
     <Layout>
       <Container maxWidth="sm">
         <Box>
+          <Button variant="contained">Contained</Button>
           <main style={pageStyles}>
             <title>Home Page</title>
             <h1 style={headingStyles}>
