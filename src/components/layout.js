@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../theme";
+
 const MainLayout = styled.div`
   margin: 0 auto;
   max-width: 650px;
@@ -8,5 +11,9 @@ const MainLayout = styled.div`
 `;
 
 export default function Layout({ children }) {
-  return <MainLayout>{children}</MainLayout>;
+  return (
+    <ThemeProvider theme={theme}>
+      <MainLayout>{children}</MainLayout>
+    </ThemeProvider>
+  );
 }
