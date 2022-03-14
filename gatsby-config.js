@@ -4,7 +4,12 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    "gatsby-plugin-layout",
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.js`),
+      },
+    },
     "gatsby-plugin-material-ui",
   ] /** @todo not sure we actually need this */,
 };
