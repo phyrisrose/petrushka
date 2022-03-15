@@ -17,6 +17,7 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@fontsource/roboto": "^4.5.3",
     "@mui/material": "^5.5.0",
     "babel-plugin-styled-components": "^2.0.6",
     "gatsby": "^4.9.0",
