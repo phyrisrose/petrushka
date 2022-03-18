@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { ThemeProvider } from "@mui/material/styles";
 import { Helmet } from "react-helmet";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
 import theme from "../theme";
 
@@ -12,6 +13,11 @@ const MainLayout = styled.main`
   font-family: "Roboto, sans-serif, serif";
 `;
 
+/**
+ *
+ * @todo shoot, I don't think we can have the title here
+ * That would mean, all the pages will have the same title.
+ */
 export default function Layout({ children }) {
   return (
     <>
@@ -24,6 +30,7 @@ export default function Layout({ children }) {
         />
       </Helmet>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <MainLayout>{children}</MainLayout>
       </ThemeProvider>
     </>
