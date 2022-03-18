@@ -10,7 +10,6 @@ const MainLayout = styled.main`
   margin: 0 auto;
   max-width: 650px;
   padding: 0 1rem;
-  font-family: "Roboto, sans-serif, serif";
 `;
 
 /**
