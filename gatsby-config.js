@@ -12,5 +12,6 @@ module.exports = {
     },
     "gatsby-plugin-material-ui" /** @todo not sure we actually need this */,
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-root-import",
   ],
 };
