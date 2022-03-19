@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import theme from "../theme";
+import theme from "src/theme";
 
 const MainLayout = styled.main`
   margin: 0 auto;
