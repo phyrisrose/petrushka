@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import theme from "src/theme";
@@ -33,9 +34,11 @@ export default function Layout({ children }) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AppBar position="static">
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Петрушка
-          </Typography>
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Петрушка
+            </Typography>
+          </Toolbar>
         </AppBar>
         <MainLayout>{children}</MainLayout>
       </ThemeProvider>
