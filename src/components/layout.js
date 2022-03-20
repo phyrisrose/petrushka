@@ -15,6 +15,8 @@ const MainLayout = styled.main`
   padding: 0 1rem;
 `;
 
+const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
+
 /**
  *
  * @todo shoot, I don't think we can have the title here
@@ -33,13 +35,14 @@ export default function Layout({ children }) {
       </Helmet>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Петрушка
             </Typography>
           </Toolbar>
         </AppBar>
+        <Offset />
         <MainLayout>{children}</MainLayout>
       </ThemeProvider>
     </>
