@@ -3,6 +3,8 @@ import styled from "@emotion/styled";
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import AppBar from "@mui/material/AppBar";
+import Typography from "@mui/material/Typography";
 
 import theme from "src/theme";
 
@@ -30,6 +32,11 @@ export default function Layout({ children }) {
       </Helmet>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <AppBar position="static">
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Петрушка
+          </Typography>
+        </AppBar>
         <MainLayout>{children}</MainLayout>
       </ThemeProvider>
     </>
