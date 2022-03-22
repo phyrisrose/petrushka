@@ -6,13 +6,19 @@ import CssBaseline from "@mui/material/CssBaseline";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { brown } from "@mui/material/colors";
 
 import theme from "src/theme";
+
+const Background = styled.div`
+  background: ${brown[50]};
+`;
 
 const MainLayout = styled.main`
   margin: 0 auto;
   max-width: 650px;
   padding: 0 1rem;
+  background: white;
 `;
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
@@ -26,7 +32,6 @@ export default function Layout({ children }) {
   return (
     <>
       <Helmet>
-        <title>Петрушка</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link
           rel="stylesheet"
@@ -43,7 +48,9 @@ export default function Layout({ children }) {
           </Toolbar>
         </AppBar>
         <Offset />
-        <MainLayout>{children}</MainLayout>
+        <Background>
+          <MainLayout>{children}</MainLayout>
+        </Background>
       </ThemeProvider>
     </>
   );

@@ -131,6 +131,7 @@ const IndexPage = () => {
   return (
     <Container maxWidth="sm">
       <Box>
+        <title>Петрушка</title>
         <h1 style={headingStyles}>
           Congratulations
           <br />
