@@ -1,5 +1,13 @@
-const primaryLight = "#fff7ff";
-const primaryDark = "#a094b7";
+import { deepPurple, amber } from "@mui/material/colors";
 
-const secondaryLight = "#ffffe5";
-const secondaryDark = "#cbba83";
+export const PRIMARY = {
+  main: deepPurple[100],
+  light: "#fff7ff",
+  dark: "#a094b7",
+};
+
+export const SECONDARY = {
+  main: amber[100],
+  light: "#ffffe5",
+  dark: "#cbba83",
+};
