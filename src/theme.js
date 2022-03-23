@@ -1,16 +1,13 @@
 import { red } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
-import { deepPurple, amber } from "@mui/material/colors";
+
+import { Color } from "src/constants";
 
 // A custom theme for this app
 const theme = createTheme({
   palette: {
-    primary: {
-      main: deepPurple[100],
-    },
-    secondary: {
-      main: amber[100],
-    },
+    primary: Color.PRIMARY,
+    secondary: Color.SECONDARY,
     error: {
       main: red.A400,
     },
