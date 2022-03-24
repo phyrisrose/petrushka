@@ -52,10 +52,13 @@ const IndexPage = () => {
   return (
     <Container maxWidth="sm">
       <Box>
-        <Typography variant="body1" gutterBottom>
-          И было всё ему нипочём, — Как снег прошлогодний — летом! Таким мой
-          предок был скрипачом. Я стала — таким поэтом.
-        </Typography>
+        {poem.map((verse) => (
+          <p>
+            {verse.map((line) => (
+              <Typography variant="body1">{line}</Typography>
+            ))}
+          </p>
+        ))}
       </Box>
     </Container>
   );
