@@ -1,4 +1,4 @@
-# Пертрушка
+# Петрушка
 
 A project starter based upon Gatsby & Material UI.
 
