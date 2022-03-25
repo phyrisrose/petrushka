@@ -12,6 +12,7 @@ import theme from "src/theme";
 
 const Background = styled.div`
   background: ${brown[50]};
+  height: 100vh;
 `;
 
 const MainLayout = styled.main`
